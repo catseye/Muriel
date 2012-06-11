@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/env perl
 
 # muriel.pl - Cat's Eye Technologies' Muriel Interpreter
 # An interpreter for Matthew Wescott's Muriel language
