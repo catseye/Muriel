@@ -1,0 +1,9 @@
+b:99;
+A:$b+" bottle"+(%"s",0,1-(b=1))+" of beer";
+.A+" on the wall,\n"+A+",\nTake one down, pass it around,\n";
+b:b-1;
+.$b+" bottle"+(%"s",0,1-(b=1))+" of beer on the wall.\n\n";
+Q:";\nA:$b+\" bottle\"+(%\"s\",0,1-(b=1))+\" of beer\";\n.A+\" on the wall,\\n\"+A+\",\\nTake one down, pass it around,\\n\";\nb:b-1;\n.$b+\" bottle\"+(%\"s\",0,1-(b=1))+\" of beer on the wall.\\n\\n\";\nQ:\"";
+R:"\";\nZ:\"b:\"+$b+Q+|Q+\"\\\";\\nR:\\\"\"+|R+R;\n@%Z,0,(b>0)*&Z";
+Z:"b:"+$b+Q+|Q+"\";\nR:\""+|R+R;
+@%Z,0,(b>0)*&Z
